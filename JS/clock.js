@@ -69,9 +69,9 @@ function changeTheme(){
             btn.style.color = "black";
         }
         theme = "white";
-        resetbtn.src = "/assets/restartSymbol(black).png";
-        editbtn.src = "/assets/edit.png";
-        settings.src = "/assets/settings.png";
+        resetbtn.src = "assets/restartSymbol(black).png";
+        editbtn.src = "assets/edit.png";
+        settings.src = "assets/settings.png";
         pomodoroWrapper.style.border = "2px solid black";
     }
     else if(theme == "white") {
@@ -91,9 +91,9 @@ function changeTheme(){
             btn.style.color = "white";
         }
         theme = "black";
-        resetbtn.src = "/assets/restartSymbol.png";
-        editbtn.src = "/assets/editWhite.png";
-        settings.src = "/assets/settingsWhite.png";
+        resetbtn.src = "assets/restartSymbol.png";
+        editbtn.src = "assets/editWhite.png";
+        settings.src = "assets/settingsWhite.png";
         pomodoroWrapper.style.border = "2px solid white";
     }
 }
@@ -131,23 +131,23 @@ function getWeather(){
         console.log(weather);
         if(hrs<20){
             if (weather.includes("overcast")){
-                weatherPNG.src = "/assets/weather_tooCloudy.png";
+                weatherPNG.src = "assets/weather_tooCloudy.png";
             }
             else if (weather.includes("rain")){
-                weatherPNG.src = "/assets/weather_rain.png";
+                weatherPNG.src = "assets/weather_rain.png";
             }
             else if (weather.includes("cloud")){
-                weatherPNG.src = "/assets/weather_cloudy.png";
+                weatherPNG.src = "assets/weather_cloudy.png";
             }
             else if (weather.includes("clear")){
-                weatherPNG.src = "/assets/weather_sunny.png";
+                weatherPNG.src = "assets/weather_sunny.png";
             }
             else  {
-                weatherPNG.src = "/assets/weather_night.png";
+                weatherPNG.src = "assets/weather_night.png";
             }
         }
         else {
-            weatherPNG.src = "/assets/weather_night.png";
+            weatherPNG.src = "assets/weather_night.png";
         }
     })
     .catch(error => console.error("Error fetching weather:", error));
