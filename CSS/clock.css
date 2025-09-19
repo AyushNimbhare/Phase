@@ -13,10 +13,10 @@ body {
 .container {
     /* border: 2px solid  black; */
     position: absolute;
-    top: 30vh;
-    left: 30vh;
-    height: 250px;
-    width: 1000px;
+    top: 30%;
+    left: 20%;
+    height: 30%;
+    width: 60%;
     margin-top: 50px;
     transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -24,6 +24,7 @@ body {
 .container.show{
     height : 100px;
     width : 500px;
+    position: absolute;
     top : 80vh;
     left :60vh;
     transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
@@ -31,8 +32,9 @@ body {
 #time {
     font-family: "LED Counter 7";
     font-weight: normal;
-    font-size: 130px;
-    height: 110px;
+    font-size: 8vw;
+    height: 7vw;
+    width: 100%;
     text-align: center;
     margin: auto;
     /* border: 1px solid blue; */
@@ -46,11 +48,12 @@ body {
 .name {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 750px; 
+    justify-content: space-evenly;
+    gap: 10vh;
+    width: 100%; 
     margin: auto;
     font-family: "LED Counter 7";
-    font-size: 20px;
+    font-size: 2vmax;
     /* border: 2px solid red; */
     transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);;
 }
