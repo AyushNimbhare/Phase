@@ -26,7 +26,7 @@ body {
     width : 500px;
     position: absolute;
     top : 80vh;
-    left :60vh;
+    left :30vw;
     transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
 #time {
