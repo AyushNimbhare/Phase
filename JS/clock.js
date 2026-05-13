@@ -301,6 +301,9 @@ function enterPomo(){
     let name =  document.querySelector(".name");
     let pmo  = document.getElementById("pomodoro");
     let controls = document.querySelector(".controls");
+    let menuIsShowing = false;
+    let background = document.querySelector(".background");
+    let menuDiv = document.querySelector("editOptions")
     if(PmoIsShowing == false) {
         pmo.classList.add("show");
         container.classList.add("show");
@@ -334,5 +337,3 @@ function exitMenu(){
     background.classList.remove("show");
     menuIsShowing = false;
 }
-
-// test 1
